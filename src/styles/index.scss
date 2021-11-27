@@ -1,7 +1,20 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeueCyr-Medium.ttf") format("ttf"),
+  url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("ttf"),
+    url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@import '~js-datepicker/src/datepicker';
+
+
+
 @import 'variables';
-@import 'scaffolding';
+@import 'main';

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Helvetica Neue';
+}
+
+
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrap_top {
+    margin-top: 96px;
+}
+
+.booking-panel {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    width: 100%;
+    padding: 19px 30px;
+    background: #462DAC;
+    &__field select{
+        background: #fff;
+        color: #000;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    &__field-place select {
+        width: 591px;
+        height: 61px;
+    }
+
+    &__field-date select {
+        width: 255px;
+        height: 61px;
+        margin-left: 9px;
+    }
+    &__extedned-btn {
+        color: #fff;
+        margin-left: 109px;
+        padding-bottom: 2px;
+        border-bottom: 1px dashed #FFFFFF;
+    }
+}
+
+.main-title {
+    font-size: 54px;
+    line-height: 64px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.qs-controls {
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 44px;
+    background: #000;
+}
+
+.qs-day {
+    color: #fff;
+}
+.qs-datepicker-container {
+    background: #000;
+    color: #fff;
+    width: 282px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.qs-square {
+    width: 38px;
+    height: 38px;
+}
+
+.qs-active {
+    background: #51B056;
+    border-radius: 10px;
+}
+
+.qs-right {
+    background: url('@/images/right-arrow.svg') no-repeat;
+    background-size: 100%;
+    width: 21px;
+    height: 26px;
+    margin-right: 20px;
+    background-position: center;
+}
+
+.qs-left {
+    background: url('@/images/left-arrow.svg') no-repeat;
+    background-size: 100%;
+    width: 21px;
+    height: 26px;
+    margin-left: 20px;
+    background-position: center;
+}
+.qs-arrow.qs-left:after {
+    display: none;
+}

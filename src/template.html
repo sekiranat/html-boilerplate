@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-  <body>
-    <div id="root"></div>
-  </body>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <div class="wrap wrap_top">
+    <h1 class="main-title">
+      Забронировать кабинет
+    </h1>
+    <div class="booking-panel">
+      <div class="booking-panel__field booking-panel__field-place">
+        <select name="place" id="">
+          <option selected value="Центр 'Маленький принц'">Центр 'Маленький принц</option>
+        </select>
+      </div>
+      <div class="booking-panel__field booking-panel__field-date">
+        <select id='datepicker' selected name="8 декабря, пятница" id="">8 декабря, пятница</select>
+      </div>
+      <div class="booking-panel__extedned-btn">
+        Расширенный поиск
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
