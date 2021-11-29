@@ -101,3 +101,58 @@ body {
 .qs-arrow.qs-left:after {
     display: none;
 }
+
+.booking-list {
+    margin-top: 60px;
+    &__top {
+        display: flex;
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        color: #8E8E8E;
+    }
+    &__current {
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 43px;
+        color: #000000;
+        margin: 0 32px;
+    }
+    &__prev,
+    &__next {
+        font-size: 14px;
+        text-decoration-line: underline;
+    }
+    &__layout {
+        display: flex;
+        margin-left: auto;
+    }
+    &__layout-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        padding: 9px 24px 9px 45px;
+        border-radius: 30px;
+        font-size: 14px;
+        text-decoration-line: underline;
+        &_horizontal {
+            background: url('@/images/horizontal-icon.png') no-repeat;
+            background-position: left center;
+            background-size: 15px 8px;
+            margin-left: 26px;
+        }
+        &_vertical {
+            background: url('@/images/vertical-icon.png') no-repeat;
+            background-position: 24px center;
+            background-size: 8px 15px;
+        }
+    }
+}
+
+.booking-list__layout-item.active {
+    background-color: #202020;
+    color: #fff;
+    text-decoration-line: none;
+}
