@@ -13,7 +13,7 @@ body {
     margin-top: 96px;
 }
 
-.booking-panel {
+.booking-search {
     display: flex;
     align-items: center;
     margin-top: 45px;
@@ -102,11 +102,10 @@ body {
     display: none;
 }
 
-.booking-list {
+.booking-navigation {
     margin-top: 60px;
-    &__top {
-        display: flex;
-    }
+    display: flex;
+    
     &__navigation {
         display: flex;
         align-items: center;
